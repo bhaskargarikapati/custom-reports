@@ -1,0 +1,19 @@
+
+.container {
+    width: 100% !important;
+    display: flex;
+}
+
+.example-tab-icon {
+    margin-right: 8px;
+  }
+
+  .mat-tab-labels {
+    display: flex ;
+    justify-content: space-evenly;
+}
+
+.childContent {
+
+    margin:20px;
+}

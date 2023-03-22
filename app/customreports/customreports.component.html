@@ -1,0 +1,39 @@
+<div class="container-fluid">
+
+    <div class="row">
+
+        <mat-tab-group mat-align-tabs="start">
+            <mat-tab>
+              <ng-template mat-tab-label>
+                <mat-icon class="example-tab-icon">table_chart</mat-icon>
+                Application Metrics
+              </ng-template>
+              <div class="contaner">
+                <div class="childContent">
+                  <h3> Application Metric Data</h3>
+                </div>
+                
+                <app-table-data></app-table-data>
+              </div>
+              
+            </mat-tab>
+          
+            <mat-tab>
+              <ng-template mat-tab-label>
+                <mat-icon class="example-tab-icon">bar_chart</mat-icon>
+                API Metrics
+              </ng-template>
+              <div class="childContent">
+                <h3> API Metric Data</h3>
+              </div>
+
+              <app-graph-data></app-graph-data>
+            </mat-tab>
+          
+           
+          </mat-tab-group>
+
+    </div>
+</div>
+
+
