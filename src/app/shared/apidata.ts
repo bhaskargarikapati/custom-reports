@@ -14,3 +14,10 @@ export interface ApiGraphData {
   totalRequests: number;
   failuredRequests: number;
 }
+
+export interface dountData {
+  Application: string;
+  hour: number;
+  Total: number;
+  Failure: number;
+}

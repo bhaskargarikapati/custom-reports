@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { ApiGraphData, ApiTableData } from './shared/apidata';
+import { ApiGraphData, ApiTableData, dountData } from './shared/apidata';
 import {HttpClient} from "@angular/common/http";
 
 @Injectable({
@@ -20,5 +20,9 @@ export class ApiService {
 
   getGraphInformation(): Observable<ApiGraphData[]>{
     return this.httpClient.get<ApiGraphData[]>(`${environment.baseURL}apiGraphData.json`);
+  }
+
+  getDonutInformation(): Observable<dountData[]>{
+    return this.httpClient.get<dountData[]>(`${environment.baseURL}csvGaugeDataAppTotalFailure.json`);
   }
 }
