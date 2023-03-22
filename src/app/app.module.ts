@@ -17,13 +17,15 @@ import { HighchartsChartModule } from 'highcharts-angular';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatRippleModule } from '@angular/material/core';
+import { ApplicationoverviewComponent } from './shared/applicationoverview/applicationoverview.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TableDataComponent,
     CustomreportsComponent,
-    GraphDataComponent
+    GraphDataComponent,
+    ApplicationoverviewComponent
   ],
   imports: [
     BrowserModule,
