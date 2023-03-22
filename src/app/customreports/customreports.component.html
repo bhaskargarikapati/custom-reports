@@ -3,6 +3,21 @@
     <div class="row">
 
         <mat-tab-group mat-align-tabs="start">
+
+          <mat-tab>
+            <ng-template mat-tab-label>
+              <mat-icon class="example-tab-icon">table_chart</mat-icon>
+              Application Overview
+            </ng-template>
+            <div class="contaner">
+              <div class="childContent">
+                <h3>Application Overview Data</h3>
+              </div>
+              
+              <app-table-data></app-table-data>
+            </div>
+            
+          </mat-tab>
             <mat-tab>
               <ng-template mat-tab-label>
                 <mat-icon class="example-tab-icon">table_chart</mat-icon>
