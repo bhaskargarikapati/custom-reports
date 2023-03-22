@@ -1,0 +1,88 @@
+{
+  "appTotalFailureCount": [
+    {
+      "ApplicationId": 1,
+      "Application": "CCC-UI",
+      "Total": 777,
+      "Failure": 406
+    },
+    {
+      "ApplicationId": 2,
+      "Application": "CIMS-API",
+      "Total": 195,
+      "Failure": 0
+    },
+    {
+      "ApplicationId": 3,
+      "Application": "CMS-UI",
+      "Total": 4,
+      "Failure": 0
+    },
+    {
+      "ApplicationId": 4,
+      "Application": "CP-UI",
+      "Total": 585,
+      "Failure": 26
+    },
+    {
+      "ApplicationId": 5,
+      "Application": "CSVT-API",
+      "Total": 193,
+      "Failure": 0
+    },
+    {
+      "ApplicationId": 6,
+      "Application": "CSVT-UI",
+      "Total": 1,
+      "Failure": 0
+    },
+    {
+      "ApplicationId": 7,
+      "Application": "G3MS-API",
+      "Total": 701,
+      "Failure": 202
+    },
+    {
+      "ApplicationId": 8,
+      "Application": "G3MS-UI",
+      "Total": 231,
+      "Failure": 63
+    },
+    {
+      "ApplicationId": 9,
+      "Application": "RSD-EMEA",
+      "Total": 2865,
+      "Failure": 2387
+    },
+    {
+      "ApplicationId": 10,
+      "Application": "SSVT-API",
+      "Total": 38,
+      "Failure": 8
+    },
+    {
+      "ApplicationId": 11,
+      "Application": "TwilioLog-EMEA",
+      "Total": 78,
+      "Failure": 53
+    },
+    {
+      "ApplicationId": 12,
+      "Application": "OOV",
+      "Total": 880,
+      "Failure": 10
+    },
+    {
+      "ApplicationId": 13,
+      "Application": "OXP",
+      "Total": 990,
+      "Failure": 120
+    },
+    {
+      "ApplicationId": 14,
+      "Application": "Data Pipeline",
+      "Total": 200,
+      "Failure": 24
+    }
+  ]
+}
