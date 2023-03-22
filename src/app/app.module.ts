@@ -14,6 +14,9 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatIconModule} from '@angular/material/icon';
 import { GraphDataComponent } from './shared/graph-data/graph-data.component';
 import { HighchartsChartModule } from 'highcharts-angular';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatRippleModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { HighchartsChartModule } from 'highcharts-angular';
     HttpClientModule,
     MatTabsModule,
     MatIconModule,
-    HighchartsChartModule 
+    HighchartsChartModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatRippleModule,
 
   ],
   providers: [],
