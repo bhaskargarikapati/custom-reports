@@ -72,7 +72,6 @@ export class GraphDataComponent implements OnInit {
           type: 'spline',
           data: seriesFailedRequests,
           name: 'Failed Requests',
-          color: '#3183F5',
         },
       ];
 
