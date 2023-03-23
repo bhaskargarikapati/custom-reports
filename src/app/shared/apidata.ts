@@ -21,3 +21,13 @@ export interface dountData {
   Total: number;
   Failure: number;
 }
+
+
+export interface ApiRegionData {
+  slno: string;
+  functionality: string;
+  apiname: string;
+  emea: string;
+  naa: string;
+  apac: string;
+}

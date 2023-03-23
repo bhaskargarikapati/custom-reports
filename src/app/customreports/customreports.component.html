@@ -1,54 +1,68 @@
 <div class="container-fluid">
 
-    <div class="row">
+  <div class="row">
 
-        <mat-tab-group mat-align-tabs="start">
+    <mat-tab-group mat-align-tabs="start">
 
-          <mat-tab>
-            <ng-template mat-tab-label>
-              <mat-icon class="example-tab-icon">table_chart</mat-icon>
-              Application Overview
-            </ng-template>
-            <div class="contaner">
-              <div class="childContent">
-                <h3>Application Overview Data</h3>
-              </div>
-              
-              <app-applicationoverview></app-applicationoverview>
-            </div>
-            
-          </mat-tab>
-            <mat-tab>
-              <ng-template mat-tab-label>
-                <mat-icon class="example-tab-icon">table_chart</mat-icon>
-                Application Metrics
-              </ng-template>
-              <div class="contaner">
-                <div class="childContent">
-                  <h3> Application Metric Data</h3>
-                </div>
-                
-                <app-table-data></app-table-data>
-              </div>
-              
-            </mat-tab>
-          
-            <mat-tab>
-              <ng-template mat-tab-label>
-                <mat-icon class="example-tab-icon">bar_chart</mat-icon>
-                API Metrics
-              </ng-template>
-              <div class="childContent">
-                <h3> API Metric Data</h3>
-              </div>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="example-tab-icon">donut_small</mat-icon>
+          All Application Overview
+        </ng-template>
+        <div class="contaner child">
+          <div class="childContent">
+            <h3>All Application Overview Data</h3>
+          </div>
 
-              <app-graph-data></app-graph-data>
-            </mat-tab>
-          
-           
-          </mat-tab-group>
+          <app-applicationoverview></app-applicationoverview>
+        </div>
 
-    </div>
+      </mat-tab>
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="example-tab-icon">table_chart</mat-icon>
+          G3MS
+        </ng-template>
+        <div class="contaner child">
+          <div class="childContent">
+            <h3>G3MS Data</h3>
+          </div>
+
+          <app-table-data></app-table-data>
+        </div>
+
+      </mat-tab>
+
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="example-tab-icon">bar_chart</mat-icon>
+          OOV
+        </ng-template>
+        <div class="contaner child">
+          <div class="childContent">
+            <h3>Commissioning API Metrics</h3>
+          </div>
+
+          <app-graph-data></app-graph-data>
+        </div>
+      </mat-tab>
+
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="example-tab-icon">table_chart</mat-icon>
+          Region wise API Consumption
+        </ng-template>
+        <div class="contaner child">
+          <div class="childContent">
+            <h3>Region wise API Metrics</h3>
+          </div>
+
+          <app-regiondata></app-regiondata>
+        </div>
+      </mat-tab>
+
+
+    </mat-tab-group>
+
+  </div>
 </div>
-
-

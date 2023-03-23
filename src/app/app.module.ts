@@ -18,6 +18,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatRippleModule } from '@angular/material/core';
 import { ApplicationoverviewComponent } from './shared/applicationoverview/applicationoverview.component';
+import { RegiondataComponent } from './regiondata/regiondata.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ApplicationoverviewComponent } from './shared/applicationoverview/appli
     TableDataComponent,
     CustomreportsComponent,
     GraphDataComponent,
-    ApplicationoverviewComponent
+    ApplicationoverviewComponent,
+    RegiondataComponent
   ],
   imports: [
     BrowserModule,

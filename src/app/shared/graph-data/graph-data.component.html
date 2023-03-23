@@ -1,7 +1,12 @@
 <div *ngIf="dataLoaded" style=" display:flex; justify-content: center; align-items: center; flex-direction: column;">
 
   <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions"  [(update)]="updateFlag"
-    style="width: 100%; height: 400px; display: block;">
+    style="width: 100%;" class ="cards-layout">
+  </highcharts-chart>
+
+
+  <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions1"  [(update)]="updateFlag"
+    style="width: 100%;" class ="cards-layout">
   </highcharts-chart>
 
 </div>

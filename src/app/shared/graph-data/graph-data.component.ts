@@ -34,6 +34,26 @@ export class GraphDataComponent implements OnInit {
   },
   };
 
+  chartOptions1: Highcharts.Options = {
+    title: {
+      text: 'API Consumption by Applications',
+    },
+    chart: {
+      type: 'column',
+    },
+
+    plotOptions: {
+      series: {
+        dataLabels: {
+          enabled: true,
+        },
+      },
+    },
+    credits: {
+      enabled: false
+  },
+  };
+
   //dependency injection
   constructor(private apiService: ApiService) {}
 
@@ -72,6 +92,19 @@ export class GraphDataComponent implements OnInit {
           type: 'spline',
           data: seriesFailedRequests,
           name: 'Failed Requests',
+        },
+      ];
+
+      this.chartOptions1.series = [
+        {
+          type: 'column',
+          name: 'OOV',
+          data: seriestotalRequests,
+        },
+        {
+          type: 'column',
+          data: seriesFailedRequests,
+          name: 'OXP',
         },
       ];
 

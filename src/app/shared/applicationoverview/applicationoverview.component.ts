@@ -25,11 +25,116 @@ export class ApplicationoverviewComponent implements OnInit {
 
     plotOptions : {
       pie: {
+        shadow: false,
+        center: ['40%', '40%'],
+        size:'50%',
+        innerSize: '40%'         
+     }
+   },
+    credits: {
+      enabled: false
+  },
+  };
+
+  chartOptions1: Highcharts.Options = {
+    title: {
+      text: 'API Response',
+    },
+    chart: {
+      type: 'pie',
+    },
+
+    plotOptions : {
+      pie: {
          shadow: false,
-         center: ['50%', '50%'],
-         size:'45%',
-         innerSize: '20%'            
+         center: ['40%', '40%'],
+         size:'50%',
+         innerSize: '40%'         
       }
+   },
+    credits: {
+      enabled: false
+  },
+  };
+
+  chartOptions2: Highcharts.Options = {
+    title: {
+      text: 'API Response',
+    },
+    chart: {
+      type: 'pie',
+    },
+
+    plotOptions : {
+      pie: {
+        shadow: false,
+        center: ['40%', '40%'],
+        size:'50%',
+        innerSize: '40%'         
+     }
+   },
+    credits: {
+      enabled: false
+  },
+  };
+
+  chartOptions3: Highcharts.Options = {
+    title: {
+      text: 'API Response',
+    },
+    chart: {
+      type: 'pie',
+    },
+
+    plotOptions : {
+      pie: {
+        shadow: false,
+        center: ['40%', '40%'],
+        size:'50%',
+        innerSize: '40%'         
+     }
+   },
+    credits: {
+      enabled: false
+  },
+  };
+
+  chartOptions4: Highcharts.Options = {
+    title: {
+      text: 'API Response',
+    },
+    chart: {
+      type: 'pie',
+    },
+
+    plotOptions : {
+      pie: {
+        shadow: false,
+        center: ['40%', '40%'],
+        size:'50%',
+        innerSize: '40%'         
+     }
+   },
+    credits: {
+      enabled: false
+  },
+  };
+
+  chartOptions5: Highcharts.Options = {
+    title: {
+      text: 'API Response',
+    },
+    chart: {
+      type: 'pie',
+    },
+
+    plotOptions : {
+      pie: {
+        shadow: false,
+        center: ['40%', '40%'],
+        size:'50%',
+        innerSize: '40%'         
+     }
    },
     credits: {
       enabled: false
@@ -48,32 +153,82 @@ export class ApplicationoverviewComponent implements OnInit {
    * This method returns Component details
    */
   getGraphInformation() {
+    const colors = ['#34c38f','#f46a6a'];
     this.apiService.getDonutInformation().subscribe((res) => {
-      this.dataLoaded = true;
-      const categories: any = res.map((data: dountData) => data.Application);
+      this.dataLoaded = true;      
 
-      const seriestotalRequests = res.map(
-        (data: dountData) => data.Total
-      );
-      const seriesFailedRequests = res.map(
-        (data: dountData) => data.Failure
-      );
-
-      this.chartOptions.xAxis = {
-        categories: categories,
-        crosshair: true,
-      };
-
-      this.chartOptions.title = {text : res[0].Application };
+      this.chartOptions.title = {text : res[0].Application,floating: true, align: 'center' }; 
 
       this.chartOptions.series = [{
         type: 'pie',
         name: res[0].Application,
         data: [
-           ['Failure ', res[0].Failure],
-           ['Success',  res[0].Total],          
-           
-        ]
+           ['Failure ', res[0].Failure,],
+           ['Success',  res[0].Total],           
+        ],
+        colors: [colors[1],colors[0]]
+     }];
+
+     this.chartOptions1.title = {text : res[1].Application, floating: true, align: 'center' };
+
+      this.chartOptions1.series = [{
+        type: 'pie',
+        name: res[0].Application,
+        data: [
+           ['Failure', res[1].Failure],
+           ['Success',  res[1].Total],           
+        ],
+        colors: [colors[1],colors[0]]
+
+     }]
+
+
+     this.chartOptions2.title = {text : res[2].Application ,floating: true, align: 'center' };
+
+      this.chartOptions2.series = [{
+        type: 'pie',
+        name: res[0].Application,
+        data: [
+           ['Failure ', res[2].Failure],
+           ['Success',  res[2].Total],           
+        ],
+        colors: [colors[1],colors[0]]
+     }];
+
+     this.chartOptions3.title = {text : res[3].Application ,floating: true, align: 'center' };
+
+      this.chartOptions3.series = [{
+        type: 'pie',
+        name: res[0].Application,
+        data: [
+           ['Failure ', res[3].Failure],
+           ['Success',  res[3].Total],           
+        ],
+        colors: [colors[1],colors[0]]
+     }]
+
+     this.chartOptions4.title = {text : res[4].Application ,floating: true, align: 'center' };
+
+      this.chartOptions4.series = [{
+        type: 'pie',
+        name: res[0].Application,
+        data: [
+           ['Failure ', res[4].Failure],
+           ['Success',  res[4].Total],           
+        ],
+        colors: [colors[1],colors[0]]
+     }]
+
+     this.chartOptions5.title = {text : res[5].Application ,floating: true, align: 'center' };
+
+      this.chartOptions5.series = [{
+        type: 'pie',
+        name: res[0].Application,
+        data: [
+           ['Failure ', res[5].Failure],
+           ['Success',  res[5].Total],           
+        ],
+        colors: [colors[1],colors[0]]
      }]
 
       this.updateFlag = true;
